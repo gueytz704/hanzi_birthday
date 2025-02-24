@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>notepad</title>
+</head>
+<style type="text/css">
+ol,ul{
+display:block;
+list-style-type:none;
+margin:3px;
+}
+</style><body>
+<div>&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="zh-CN"&gt;<br>
+&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;title&gt;&#31036;&#29289;&#26102;&#38388;&#65281;&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;style&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; body {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; background-color: #f9f9f9;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #333;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; color: #e91e63;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; img {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max-width: 100%;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; height: auto;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; border-radius: 10px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; margin-top: 20px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; &lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;h1&gt;&#36825;&#26159;&#20026;&#20320;&#20934;&#22791;&#30340;&#31036;&#29289;&#65281;&#127873;&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;p&gt;&#24863;&#35874;&#20320;&#36873;&#25321;&#20102;&#36825;&#24133;&#22270;&#29255;&#65292;&#24076;&#26395;&#20320;&#21916;&#27426;&#36825;&#20010;&#24778;&#21916;&#65281;&lt;/p&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;div id="gift-image"&gt;&lt;/div&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp; &lt;script&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &#33719;&#21462;URL&#20013;&#30340;&#36873;&#25321;&#21442;&#25968;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const urlParams = new URLSearchParams(window.location.search);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const choice = urlParams.get('choice');<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &#26681;&#25454;&#36873;&#25321;&#26174;&#31034;&#30456;&#24212;&#30340;&#31036;&#29289;&#22270;&#29255;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const giftImage = document.getElementById('gift-image');<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (choice) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; giftImage.innerHTML = `&lt;img src="${choice}_gift.jpg" alt="&#31036;&#29289;&#22270;&#29255;"&gt;`;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; giftImage.innerHTML = `&lt;p&gt;&#27809;&#26377;&#36873;&#25321;&#22270;&#29255;&#65292;&#26080;&#27861;&#26174;&#31034;&#31036;&#29289;&#12290;&lt;/p&gt;`;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; &lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+</body>
+</html>
