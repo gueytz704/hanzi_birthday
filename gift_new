@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>礼物时间！</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>这是为你准备的礼物！🎁</h1>
+    <p>感谢你选择了这幅图片，希望你喜欢这个惊喜！</p>
+    <div id="gift-image"></div>
+
+    <script>
+        // 获取URL中的选择参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const choice = urlParams.get('choice');
+
+        // 根据选择显示相应的礼物图片
+        const giftImage = document.getElementById('gift-image');
+        if (choice) {
+            giftImage.innerHTML = `<img src="${choice}_gift.jpg" alt="礼物图片">`;
+        } else {
+            giftImage.innerHTML = `<p>没有选择图片，无法显示礼物。</p>`;
+        }
+    </script>
+</body>
+</html>
